@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Album da Copa</h1>
+    {% if erro %}
+    <p class="lead">Você precisa estar logado para instalar o album.</p>
+    {% else %}
+    <p class="lead">Instalado com sucesso!</p>
+    {% endif %}
+</div>
+
+{% endblock %}

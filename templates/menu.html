@@ -1,0 +1,9 @@
+<div class="header">
+    <ul class="nav nav-pills pull-right">
+        <li {% if home %}class="active"{% endif %}><a href="{% url 'home' %}">Home</a></li>
+        <li {% if 'album' in request.path %}class="active"{% endif %}><a href="{% url 'album' %}">Album</a></li>
+        <li {% if 'faltam' in request.path %}class="active"{% endif %}><a href="{% url 'faltam' %}">Faltam</a></li>
+        <li {% if 'repetidas' in request.path %}class="active"{% endif %}><a href="{% url 'repetidas' %}">Repetidas</a></li>
+    </ul>
+    <h3 class="text-muted">Album da Copa</h3>
+</div>

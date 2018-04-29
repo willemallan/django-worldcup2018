@@ -1,0 +1,95 @@
+
+.login-body { background:#32323A; background-size:cover; width:100%; height:100%;}
+.login-body #main-content{ margin: 0;}
+.login-body #main-content .wrapper{ margin: 0; padding: 0;}
+.login-body #main-content #content-header{ display: none;}
+
+.login-body .alert{ margin: 25px;}
+
+.form-signin {
+    max-width:330px;
+    margin:100px auto;
+    background:#fff;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+}
+.form-signin h2.form-signin-heading {
+    margin:0;
+    padding:35px 15px;
+    text-align:center;
+    background:#aec785;
+    border-radius:5px 5px 0 0;
+    -webkit-border-radius:5px 5px 0 0;
+    color:#fff;
+    font-size:18px;
+    text-transform:uppercase;
+    font-weight:300;
+    font-family:'Open Sans',sans-serif;
+    border-bottom:10px solid #a0b87e;
+}
+.form-signin .checkbox {
+    margin-bottom:14px;
+}
+.form-signin .checkbox {
+    font-weight:normal;
+    color:#b6b6b6;
+    font-weight:300;
+    font-family:'Open Sans',sans-serif;
+}
+.form-signin .form-control{ margin-bottom:15px;}
+.form-signin .form-control input {
+	border-radius:5px;
+    -webkit-border-radius:5px;
+    border:1px solid #eaeaea;
+    box-shadow:none;
+    font-size:12px ;
+
+    position:relative;
+    height:auto;
+    padding:10px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+.form-signin .form-control:focus {
+    z-index:2;
+}
+
+.form-signin .btn-login {
+    background:#1fb5ac;
+    color:#fff;
+    text-transform:uppercase;
+    font-weight:300;
+    font-family:'Open Sans',sans-serif;
+    margin:20px 0 5px;
+}
+.form-signin p {
+    text-align:left;
+    color:#b6b6b6;
+    font-size:16px;
+    font-weight:300;
+}
+.form-signin a,.form-signin a:hover {
+    color:#1fb5ac;
+}
+.form-signin a:hover {
+    text-decoration:underline;
+}
+.login-wrap {
+    padding:20px;
+    position:relative;
+}
+.user-login-info {
+    background:#eaeaec;
+    margin:-20px -20px 20px -20px;
+    padding:20px;
+}
+.user-login-info .form-control:last-child {
+    margin-bottom:0 !important;
+}
+.registration {
+    position:absolute;
+    right:0;
+    bottom:-35px;
+    color: #b8bab9;
+}

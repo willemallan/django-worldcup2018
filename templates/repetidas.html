@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load site_tags %}
+
+{% block title %}Repetidas - {% endblock %}
+
+{% block content %}
+
+<div class="page-header">
+  <h1>Repetidas <small>figurinhas para troca</small></h1>
+</div>
+
+<div class="row">
+  <div class="pd20">
+    <p>Repetidas <span class="label label-warning">{{ repetidas }}</span></p>
+  </div>
+
+  <div class="row pd20">
+    <form class="navbar-form navbar-left" action="" method="GET">
+      <div class="form-group">
+        <input type="text" name="q" class="form-control" placeholder="Digite uma figurinha" value="{{ request.GET.q }}">
+      </div>  
+      <input type="submit" class="btn btn-warning" value="Pesquisar">
+      
+      {% if request.GET %}
+        {% if encontrados %}
+        <p>Resultados da busca {{ encontrados }} figurinha(s).</p>
+        {% else %}
+        <p>Nenhum figurinha encontrada.</p>
+        {% endif %}
+      {% endif %}
+
+    </form>
+  </div>
+
+  <table border="1" class="figurinhas" align="center">
+      <tr>
+  {% for f in figurinhas %}
+          <td class="figurinha{% if f.tenho %} tenho{% endif %}{% if request.GET.q|igual:f.nome %} busca{% endif %}">{{ f.nome }}</td>     
+      {% if forloop.counter|divisibleby:20 %}
+      </tr>
+      <tr>
+      {% endif %}   
+  {% endfor %}    
+      </tr>
+  </table>
+</div>
+
+{% endblock %}
